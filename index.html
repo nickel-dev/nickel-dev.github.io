@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="personal site of the young developer Nickel-Dev.">
-  <!--Style/Title-->
-  <link rel="stylesheet" href="styles/index.css">
-  <title>Nickel-Dev</title>
-</head>
-<body>
-  <article itemscope itemtype="https://schema.org/Article">
-    <div class="site">
-      <div class="center-title-align">Nickel-Dev</div>
-      <hr class="breaker-designed">
-      <div class="center-text-align">Some random text</div>
-    </div>
-  </article>
-</body>
-</html>
+#    <py-env>matplotlib</py-env>
+import random as rnd
+
+def gen_passwd(chars: str) -> str:
+    passwd = ''
+    for _ in range(rnd.randint(8, 20)):
+        char = rnd.choice(chars)
+        if char.isdigit():
+            passwd += char
+        elif rnd.randint(0, 1) == 1:
+            passwd += char.upper()
+        else:
+            passwd += char.lower()
+    return passwd
+
+for _ in range(20):
+    print(gen_passwd('abcdefghijklmnopqrstuvwxyz012345678_'))
