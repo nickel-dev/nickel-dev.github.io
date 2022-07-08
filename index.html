@@ -1,17 +1,40 @@
-#    <py-env>matplotlib</py-env>
-import random as rnd
-
-def gen_passwd(chars: str) -> str:
-    passwd = ''
-    for _ in range(rnd.randint(8, 20)):
-        char = rnd.choice(chars)
-        if char.isdigit():
-            passwd += char
-        elif rnd.randint(0, 1) == 1:
-            passwd += char.upper()
-        else:
-            passwd += char.lower()
-    return passwd
-
-for _ in range(20):
-    print(gen_passwd('abcdefghijklmnopqrstuvwxyz012345678_'))
+<!doctype html>
+<html>
+        <title>title</title>
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    
+    <body>
+        <div class="site">
+            <div class="title">
+                <div class="text">
+                    <h1><u>Nickel Dev</u></h1>
+                    <h3>Hello little wanderer</h3>
+                    <hr>
+                    <div class="links">
+                        <a href="projects.html">| |. projects .|</a>
+                        <a href="/">|. main page .|</a>
+                        <a href="socials.html">|. socials .| |</a>
+                        <!-- <a href="coders-dream.html">|. coders dream .| |</a> -->
+                    </div>
+                    <hr>
+                </div>
+                <div class="socials">
+                    <a href="https://twitter.com/roboys5"><img src="images/socials/twitter.png" width="80" height="80"></a>
+                    <a href="https://github.com/nickel-dev"><img src="images/socials/github.png" width="80" height="80"></a>
+                    <a href="https://www.youtube.com/channel/UCFc4VwXGiaXq1CWQfdOQncw"><img src="images/socials/youtube.png" width="80" height="80"></a>
+                </div>
+            </div>
+            <div class="me">
+                <p>Hello, my name is Daniel.</p>
+                <p>I'm a junior developer going to High-School</p>
+                <p>and my goal is it to become the</p>
+                <p>best programmer [<u>EVER</u>]</p>
+                <br><br>
+                <p>[ developer != gamedev ]</p>
+            </div>
+        </div>
+    </body>
+</html>
