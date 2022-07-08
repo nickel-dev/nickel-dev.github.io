@@ -43,3 +43,9 @@ a, a:link, a:visited, a:hover, a:active
     border-style: dashed;
     border-color: black;
 }
+
+.github-link {
+    font-size: 200%;
+    border-style: dashed;
+    border-color: rgb(129, 129, 129);
+}
