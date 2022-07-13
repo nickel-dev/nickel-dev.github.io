@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Fira';
+  src: url("fonts/fira.otf");
+  src: url("fonts/fira.otf") format("opentype");
+  font-style: normal;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: #ccc;
+  color: #000;
+}
+::selection {
+  background: #ccc;
+  color: #000;
+}
+
+a, button {
+  text-decoration: none;
+  background-image: linear-gradient(to left, yellow, orange, violet);
+  background-clip: text;
+  color: transparent;
+}
+
+img {
+  border-radius: 3%;
+}
+
+hr {
+  margin-top: 4%;
+  margin-right: -7%;
+  margin-left: -7%;
+  color: white;
+}
+
+iframe {
+  border: 0px;
+  background-color: #d1ced0;
+  width: 400%;
+  margin-left: -150%;
+}
+
+/*-------*/
+
+.cursor {
+  position: absolute;
+  margin-left: .5%;
+}
+
+.top-links {
+  display: inline;
+  position: absolute;
+  margin-top: -42%;
+}
+.top-home {
+  position: fixed;
+  margin-left: -25%;
+  font-size: calc(25px + 2vmin);
+}
+
+.nice-gradient {
+  background-image: linear-gradient(to left, yellow, orange, violet);
+  background-clip: text;
+  color: transparent;
+}
+.gray-dient {
+  background-image: linear-gradient(to left, #1c1c1c, #202020);
+  background-color: transparent;
+}
+
+.App {
+  text-align: center;
+  font-family: "Fira";
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7.5px + 2vmin);
+  color: white;
+}
