@@ -61,10 +61,12 @@ iframe {
   background-image: linear-gradient(to left, yellow, orange, violet);
   background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
 }
 .gray-dient {
   background-image: linear-gradient(to left, #1c1c1c, #202020);
   background-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .App {
