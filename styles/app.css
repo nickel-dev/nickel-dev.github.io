@@ -19,6 +19,7 @@ a, button {
   background-image: linear-gradient(to left, yellow, orange, violet);
   background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
 }
 
 img {
