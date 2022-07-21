@@ -14,12 +14,12 @@
   color: #000;
 }
 
-a, button {
+a {
   text-decoration: none;
   background-image: linear-gradient(to left, yellow, orange, violet);
   background-clip: text;
-  color: transparent;
   -webkit-background-clip: text;
+  color: transparent;
 }
 
 img {
